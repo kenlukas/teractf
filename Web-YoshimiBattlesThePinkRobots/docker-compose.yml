@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    volumes:
+      - ./html:/usr/local/apache2/htdocs/
+    ports:
+      - "2224:8000"
+

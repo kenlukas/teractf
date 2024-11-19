@@ -8,7 +8,7 @@ char daflag[32];
 void win(long first, long second) {
     if (first == 0xdeadbeef && second == 0xc0defeed){
         fptr = fopen("./flag.txt", "r");
-	if (file == NULL) {
+	if (fptr == NULL) {
 		printf("No flag.txt file found\n");
 		return 1;
 	fgets(daflag, 32, fptr);

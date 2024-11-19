@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// gcc youdontownme.c -o youdontownme -fno-stack-protector  -no-pie
+// gcc youdontownme.c -o youdontownme -fno-stack-protector  -no-pie -m32
 
 FILE *fptr;
 char daflag[32]; 

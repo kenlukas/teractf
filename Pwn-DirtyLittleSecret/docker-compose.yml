@@ -1,7 +1,7 @@
 services:  
-app:  
-build:  
-context: .  
-ports:  
-- 2228:5000  
-privileged: true
+  app:  
+    build:  
+      context: .  
+    ports:  
+      - 2228:5000  
+    privileged: true

@@ -4,6 +4,6 @@ services:
     build: .
     restart: always
     ports:
-      - "2222:5000"
+      - "2226:5000"
     volumes:
       - .:/app

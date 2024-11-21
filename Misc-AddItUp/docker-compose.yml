@@ -1,0 +1,8 @@
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - 2225:5000
+    privileged: true
+

@@ -4,6 +4,8 @@
 
 ### Why try, I know why! The feeling inside me says it’s time I was gone. Clear head, new life ahead. I want to be king now not just one more pawn
 
+I would try to figure this out by running in through something like [https://www.aperisolve.com/](https://www.aperisolve.com/).  This file would appear normal.  I have a checklist I follow and one of the things I look for (way down the list) is a resized JPEG file.
+
 This takes advantage of being able to manipulate the visible areas of a JPG file.  You can adjust the height of the file without distorting the width of the file.  In this case, the image appears to be complete but if you manipulate the file you can add to the height.
 
 Use `exiftool` to figure out the size:
@@ -31,7 +33,7 @@ Image Size                      : 3002x1585
 Megapixels                      : 4.8
 ```
 
-Then convert 1585 to hex:
+Then convert the height `1585` to hex:
 
 ```sh
 $ python3 -c 'print(hex(1585))'                               

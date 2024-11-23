@@ -18,4 +18,10 @@ teractf{L1ght3n_up_wh1L3_u_5t1LL_c4n!}
 
 ```
 
+or use CyberChef
+
+![cyberchef](./cyberchef.png)
+
 **teractf{L1ght3n_up_wh1L3_u_5t1LL_c4n!}**
+
+

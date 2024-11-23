@@ -29,22 +29,20 @@ for i in range(2000):
    if '+' in q:
        x, y = int(q[2]),int(q[4])
        ans = str(x + y)
-       io.sendline(ans)
    elif '-' in q:
        x, y = int(q[2]),int(q[4])
        ans = str(x - y)
-       io.sendline(ans)
    elif 'squared?' in q:
        x = int(q[2])
        ans = str(x**2)
-       io.sendline(ans)
    elif '*' in q:
        x,y = int(q[2]), int(q[4])
        ans = str(x * y)
-       io.sendline(ans)
    else:
        print(f"WTF??")
        exit()
+   io.sendline(ans)
+       
 
 # Receive the flag
 io.interactive()

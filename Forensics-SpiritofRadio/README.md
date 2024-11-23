@@ -5,7 +5,7 @@
 ###  This file was found in a USB stick that was wrapped in paper.  Scribbled on the paper:  "For the words of the profits were written on the studio walls."  
 Flag Format: teractf{FRN_OperatorClass_GrantDate}  where date is mmddyyyy
 
-It's pretty obvious from listing to the .wav file that this is morse code.
+It's pretty obvious from listening to the .wav file that this is morse code.
 
 
 I used [Morse Code World](https://morsecode.world/) to decode it.  The output is:
@@ -25,4 +25,4 @@ I Googled `kq4upr frn lookup` and found a license search.  If you put in the cal
 ![frn lookup](./frn_lookup.png)
 
 
-teractf{0035804160_Technician_08152024}
+**teractf{0035804160_Technician_08152024}**

@@ -1,0 +1,11 @@
+‌S​t​e​g‌a​n‌o‌g‌r​a​p‌h‌y​ ‌i​s‌ ​t​h​e‌ ‌p​r‌a‌c​t​i‌c‌e‌ ‌o​f‌ ​h​i‌d‌i‌n​g​ ‌m​e​s​s‌a​g‌e‌s‌ ​i​n‌ ‌o​t​h‌e‌r​ ​m​e​d‌i​a​.‌ ‌ ​T​h‌e​ ‌p​r‌a‌c​t​i‌c‌e‌ ‌d‌a​t​e‌s​ ​b‌a​c‌k‌ ​t​o‌ ‌a​t​l‌e​a​s​t‌ ​5‌0‌0‌ ‌B​.​C‌.‌ ‌ ​I‌t​ ​w‌a​s​ ‌u​s‌e‌d​ ​d‌u‌r​i​n‌g‌ ​w​a‌r​ ‌b​y‌ ​s‌p​i​e​s​ ​t‌o‌ ​s​e‌n‌d‌ ​s‌e​c‌r​e​t​s​.​ ‌ ​T​h​e‌ ​t​e​r‌m‌ ​c​o‌m​e‌s‌ ‌f​r​o‌m​ ​t​h‌e‌ ​G​r​e‌e​k‌ ‌w‌o​r‌d​ ​s​t​e​g‌a​n​o​s‌, ​m‌e‌a‌n‌i​n​g‌ ‌t‌o‌ ‌c​o‌n​c​e​a​l​,‌ ​a​n‌d‌ ​g‌r‌a‌p‌h​o​,‌ ‌m‌e​a‌n‌i​n​g‌ ​t‌o​ ‌w‌r​i​t‌e​.‌ ‌ ‌S​t​e​g‌a‌n‌o‌g‌r​a​p​h‌y‌ ‌i‌s‌ ‌o​f​t‌e‌n​ ​u‌s‌e​d​ ‌i​n‌ ‌c‌o​n​j​u‌n‌c​t‌i‌o​n​ ​w​i​t‌h​ cryptography to strengthen the security of message passing.
+
+The earliest recorded use of steganography was in 500 B.C. when a Greek named Histiaeus would shave the head of a slave, tattoo the message on their head, and let there hair grow back.  He would then send the slave with the hidden correspondence to his son-in-law.  The son-in-law would shave the slaves head to reveal the message.  There was also the practice of writing messages on the shaved bellies of rabbits, and then delivering the rabbit as a normal livestock delivery. 
+
+During the Revolutionary War in the United States, a spy would hide secrets in a ball of yarn and then leave the ball at a pick up spot.  This alerted the US troops to British secrets.  During World War I and II, knitting was used to send messages.  Morse code could be added to a pattern, and decoded by the recipient, using knit and purl stitches as dots and dashes.
+
+During the Cold War, Soviet spies had messages hidden inside what appeard to be US coins.  The contents contained one time padded ciphers, and was discovered by a paperboy who after collecting from a customer dropped a coin and it split open revealing its contents.
+
+Today, steganography is used frequently in our digital world.  From hiding easter eggs in games, to placing watermarks on documents, hiding data inside other mediums is a common practice.
+
+I hope this brief introduction to Steganography and its history was useful and entertaining.  Your takeaway, you could be looking at a hidden message and not even know it! 

@@ -8,7 +8,6 @@ int main(void) {
   char flag[40];
 
   printf("Enter the password: ");
-  fflush(stdout);
   fgets(passwd, sizeof(passwd), stdin);
   passwd[strlen(passwd)-1] = '\0';
 

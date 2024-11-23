@@ -1,0 +1,13 @@
+Open up the pcap file in WireShark.  You can see the DNS queries are looking for a strange subdomain.
+
+The first 9 subdomains are a red herring.  Everything else is the decimal representation of the ASCII Table.
+
+Run the following to pull the subdomains out.
+
+tshark -r boynamedgoo.pcap -Y 'dns.qry.name contains workisfxd.com and ip.src==10.22.1.159' -T fields -e dns.qry.name |cut -d '.' -f 1 | tr '\n' ' '
+
+You'll be left with the following if you ignore the number 1-9
+
+116 101 114 97 99 116 102 123 119 104 52 116 36 95 49 110 95 52 95 110 52 109 51 95 36 51 114 118 51 114 125
+
+Paste that in Cyberchef and you're done.

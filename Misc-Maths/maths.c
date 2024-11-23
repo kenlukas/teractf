@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-int LOOP_CNT = 2000;
+int LOOP_CNT = 2;
 
 int i, rand_num, the_ans, ans = 0;
 int x;

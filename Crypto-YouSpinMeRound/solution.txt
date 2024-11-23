@@ -1,0 +1,5 @@
+From Hex
+XOR key: DeadorAlive
+Reverse
+From Base64
+Rot13 (not numbers)

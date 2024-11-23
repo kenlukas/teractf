@@ -1,0 +1,3 @@
+I thought he was an old time baseball player.  Nope, well tell me who he is, what profession is he known for.
+
+Format: teractf{First_Second_Third_LastName_Profession}

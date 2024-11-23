@@ -27,4 +27,12 @@ Enter passphrase:
     compressed: yes
 ```
 
+Or you can upload the file to [www.aperisolve.com](https://aperisolve.com), and notice that Steghide has extracted flag.txt.
+
+![aperisolve](./aperisolve.png)
+
+Download the file and read the flag.
+
+
+
 **teractf{C4tch_m3_0r_1_g0_H0ud1ni}**

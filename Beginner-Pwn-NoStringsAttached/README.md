@@ -4,7 +4,7 @@
 
 ### I said to her:  "I hope we're Nsync  with this challenge." "Who would makes such a bad pun?" she asked with a smirk.  *I Thought She Knew* so then I said  "*This I Promise You*,  not a *Space Cowboy*. " I continued: "*It Makes Me Ill*  but...  *It's Gonna Be Me*!" Download the attached file and find the flag.
 
-Solution:
+Solution 1:
 
 1. Download the file, run strings against it.
 
@@ -26,3 +26,10 @@ crtstuff.c
 2. Submit the flag
 
 **teractf{1t_a1nt_n0_l13_84by_8y3_8y3_8y3}**
+
+
+Solution 2:
+
+Open the file in CyberChef and use the Strings Recipe
+
+![cyberchef](./cyberchef.png)

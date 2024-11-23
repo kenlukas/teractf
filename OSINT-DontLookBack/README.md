@@ -9,9 +9,9 @@ Don't look back, a new day is breakin'.  It's been too long since I looked at th
 
 Solution:
 
-The clue contains the names Sherman and Peabody, who used the Wayback Machine.  
+The date of the event and the clue contains the names Sherman and Peabody, who used the [Wayback Machine.](https://web.archive.org/)  
 
-Use the web.archive.org and go back to the 1998.  There is only one listing - December 12, 1998.  Clicking on it redirects to an NCR site for February 1999.  
+Use the web.archive.org to search for www.teradata.com.  The farthest back you can go is 1997, but the only save for that year is a parked domain.  Checking for 1998 archives, there is only one listing - December 12, 1998.  Clicking on it redirects to an NCR site for February 1999.  
 
 ![landing](./landing_1999.png)
 

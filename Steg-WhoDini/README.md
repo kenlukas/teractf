@@ -4,7 +4,7 @@
 
 ### "Oh my god, it's him, not again!" This guy took the flag!  "I have zero doubts!" He's  Shady, and probably hid the flag under lock and key.
 
-This image didn't have anything interesting in the output of `strings` or exiftool.  I ran steghide on it and it looks to be password protected.
+This image didn't have anything interesting in the output of `strings` or exiftool.  Running it in [www.aperisolve.com](https://aperisolve.com) noted there is a password protected steg.  I ran steghide on it and it confirmed it's password protected.
 
 Run `stegseek --crack`.  It provides the password and outputs the flag file.
 

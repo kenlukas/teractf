@@ -4,20 +4,6 @@ import random
 import threading
 import time
 
-# Predefined list of questions
-questions = [
-    "What is the capital of France?",
-    "What is 5 + 7?",
-    "Name a programming language that starts with 'P'.",
-    "What color is the sky on a clear day?",
-    "Who wrote 'To Kill a Mockingbird'?",
-    "What is the square root of 64?",
-    "What is the chemical symbol for water?",
-    "Name a planet in our solar system.",
-    "What is 10 * 10?",
-    "What is the boiling point of water in Celsius?"
-]
-
 
 def handle_client(client_socket):
     client = nclib.Netcat(sock=client_socket)  # Wrap socket with nclib.Netcat

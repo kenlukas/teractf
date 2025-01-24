@@ -2,5 +2,4 @@
 
 ##  The Basics - Getting acquainted with Linux and picoCTF
 
-This is an excellent primer for CTFs [https://primer.picoctf.com/](https://primer.picoctf.com/)  
-A Unix command cheat sheet: [https://www.git-tower.com/blog/command-line-cheat-sheet/](https://www.git-tower.com/blog/command-line-cheat-sheet/)
+### Use the PDF as a guide for setting up Linux on Windows

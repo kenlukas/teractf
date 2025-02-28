@@ -70,7 +70,7 @@ Cool, found the flag.  To reinforce there's multiple ways to solve a problem in 
 
 If you recall, the exiftool output for the Attribution field was `Attribution URL                 : cGljb0NURntNRTc0RDQ3QV9ISUREM05fNGRhYmRkY2J9Cg==`
 
-We want everything to the right of the `:` so lets use that as the delimiter and select the second field (you may wonder why this tool doesn't start counting at 0, ¯\\_(ツ)_/¯).
+We want everything to the right of the `:` so lets use that as the delimiter and select the second field (you may wonder why this tool doesn't start counting at 0, ¯\\\_(ツ)\_/¯).
 
 ```sh
 $ exiftool ukn_reality.jpg| grep Attribu | cut -f 2 -d ":"

@@ -141,7 +141,7 @@ mystery  CRC error in chunk IDAT (computed a921f5dc, expected 28695304)
 ERROR: mystery
 ```
 
-:rage: :cursing_face: 😡:
+:rage: :cursing_face: 😡
 
 What did I forget this time?  Searching for 28695304
 
@@ -153,7 +153,7 @@ Now I'm 4-bytes short?  FFS, because the Chunk Length doesn't count itself.  I s
 $ pngcheck  mystery
 OK: mystery (1642x1095, 24-bit RGB, non-interlaced, 96.3%).
 ```
-😂:
+😂
 
 ![flag](./mystery.png)
 

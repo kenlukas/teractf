@@ -15,7 +15,7 @@ password = sys.argv[2]
 high = 1000
 low = 1
 last = 500
-child = pexpect.spawn(f'ssh -p {port} ctf-player@atlas.picoctf.net')
+child = pexpect.spawn(f'ssh -o StrictHostChecking -p {port} ctf-player@atlas.picoctf.net')
 #child.expect('Are you sure.*')
 #child.sendline('yes')
 child.expect('password:')

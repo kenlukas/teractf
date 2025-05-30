@@ -34,8 +34,7 @@ lock_dir=_sh00046
 #   1092 -rw-r--r-- flag
 #
 ```
-If you follow the instructions this is the outcome:
-NOTE: I had to install uudecode in my environment.
+Follow the instructions this is the outcome.  NOTE: I had to install uudecode in my environment.
 
 ```sh
 $ sh Flag.pdf 

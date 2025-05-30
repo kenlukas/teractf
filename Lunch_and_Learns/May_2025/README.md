@@ -9,7 +9,7 @@
 
 - Verify 
 
-- Strings
+- Strings It
 
 - Special
 

@@ -123,7 +123,7 @@ $ file flag.out
 flag.out: LZ4 compressed data (v1.4+)
 ```
 
-:crying:
+:cry:
 
 ```sh
 $ mv flag.out flag.lz4

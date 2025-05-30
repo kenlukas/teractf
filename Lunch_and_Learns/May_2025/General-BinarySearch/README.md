@@ -31,7 +31,7 @@ Here's your flag: picoCTF{g00d_gu355_2e90d29b}
 Connection to atlas.picoctf.net closed.
 ```
 
-And here's the script that will work with it.
+And here's the script that will work with it.  The script expects (pun intended) that you've logged in once before to handle questions about storing 
 
 ```python
 #!/usr/bin/env python3
@@ -51,7 +51,7 @@ password = sys.argv[2]
 high = 1000
 low = 1
 last = 500
-child = pexpect.spawn(f'ssh -p {port} ctf-player@atlas.picoctf.net')
+child = pexpect.spawn(f'ssh -o StrictHostChecking=no -p {port} ctf-player@atlas.picoctf.net')
 #child.expect('Are you sure.*')
 #child.sendline('yes')
 child.expect('password:')

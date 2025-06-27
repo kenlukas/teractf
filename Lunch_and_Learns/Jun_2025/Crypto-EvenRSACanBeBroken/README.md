@@ -13,10 +13,10 @@ e: 65537
 cyphertext: 763559525850305696903462512495094075868893204294612496667090588433311227380058567940061224577931220368096084889108203592892736690047197987138054822047559
 
 ```
-Normally, I'd just feed these values into RSACtfTool but since N is even the tool is having a fit.  So we need to do this the old fashioned way.
-But let's back up a bit.  To oversimplify things, RSA works by using two unique prime numbers of sufficent length, they are called p and q.  Those primes are mulitplied together to give a value N.  Another smaller prime number (usually 65537) is chosen as an exponent value.  The last step before encrypting is to convert the text you want to encrypt to an integer which we'll call m. To encrypt, get the value of m to the e power (m^e) and find the modulo of N for that value.  That is your cipher text (ct).  ct = m^e^ mod N
+Normally, I'd feed these values into RSACtfTool, but since N is even, the tool is having a fit.  So we need to do this the old-fashioned way.
+But let's back up a bit.  To oversimplify, RSA works by using two unique prime numbers of sufficient length, which are denoted as p and q.  Those primes are multiplied together to give a value N.  Another smaller prime number (usually 65537) is chosen as an exponent value.  The last step before encrypting is to convert the text you want to encrypt to an integer, which we'll call m. To encrypt, get the value of m to the e power (m^e) and find the modulo of N for that value.  That is your ciphertext (ct).  ct = m<sup>e</sup> mod N
 
-I'm not qualified or competent enough to go into the mathematical details of how to decrypt.  To decrypt the cipher text you need a value commonly referred to as 'phi' which is also called Euler's totient, and another called 'd' which is the modulo inverse of 'e'.  Phi is equivalent to (p-1)*(q-1).  Then you need to get the private exponent which can be obtained using the mod_inverse function in the python sympy library. If you're interested d is the modular inverse of e modulo phi(n).
+I'm not qualified or competent enough to go into the mathematical details of how to decrypt.  To decrypt the ciphertext, you need a value commonly referred to as 'phi', which is also called Euler's totient, and another called 'd', which is the modulo inverse of 'e'.  Phi is equivalent to (p-1)*(q-1).  Then, you need to obtain the private exponent, which can be calculated using the mod_inverse function in the Python Sympy library. If you're interested, d is the modular inverse of e modulo phi(n).
 
 
 ```python

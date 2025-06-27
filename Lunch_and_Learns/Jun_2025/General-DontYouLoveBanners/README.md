@@ -2,9 +2,9 @@
 
 ## General
 
-### Can you abuse the banner? The server has been leaking some crucial information on tethys.picoctf.net 56016. Use the leaked information to get to the server.  To connect to the running application use nc tethys.picoctf.net 62001. From the above information abuse the machine and find the flag in the /root directory.
+### Can you abuse the banner? The server has been leaking some crucial information on tethys.picoctf.net 56016. Use the leaked information to get to the server.  To connect to the running application, use nc tethys.picoctf.net 62001. From the above information abuse the machine and find the flag in the /root directory.
 
-Based on the text, we need to go to port 56016 first.  It doesn't prompt to use `nc`, but when I'm given a host and port it's my go to.
+Based on the text, we need to go to port 56016 first.  It doesn't prompt to use `nc`, but when I'm given a host and port, it's my go-to.
 
 ```sh
 $ nc tethys.picoctf.net 56016
@@ -110,7 +110,7 @@ except:
     KeyboardInterrupt
 ```
 
-Nothing obvious there.  Next step is to start looking for misconfigurations.
+Nothing obvious there.  The next step is to start looking for misconfigurations.
 
 There was no /etc/crontab, and no executable that's overly permissive.
 
@@ -147,9 +147,9 @@ player:$6$BCCW51fi$UI/5W01uG2.6EmxktMtZXbJQwrgDlv213cLwu7RxaIQHnRZXwKZ3yjuyNKf86
 ```
 
 Yes!  Note: /etc/shadow should never be readable by anyone but root!  The /etc/shadow file is where Linux stores the hashed password value.  That hash value for the root password follows 'root:'.  
-Based on the '$6$' you can find this is a SHA512 hash.  
+Based on the '$6$', you can find that this is a SHA512 hash.  
 
-A hash is a one way algorithm.  In this case it converts a plaintext password to something completely (and hopefully uniquely) different.  Once the password is hashed, the system has no means of knowing what the password was.  When you log in and supply your password, the system hashes the value you submit and compares it with what's in the file.  If it matches, you gave the correct password.  This is good and bad.  The bad part is that whatever value I input will always return the same hashed output.  The good part is, if you use a unique password it's unlikey it will be found in a list of leaked passwords. These lists are frequently used with password crackers like HashCat, or John the Ripper.  For this exercise, we'll use the latter but both have their pros and cons.  We'll use a password list called rockyou.txt.  This password list was created from a data breach of the company [RockYou](https://en.wikipedia.org/wiki/RockYou).  It contains over 14 million unique passwords pulled from that breach.
+A hash is a one-way algorithm.  In this case, it converts a plaintext password to something completely different (and hopefully unique).  Once the password is hashed, the system has no means of knowing what the password was.  When you log in and supply your password, the system hashes the value you submit and compares it with the value stored in the file.  If it matches, you gave the correct password.  This is good and bad.  The downside is that the value I input will always return the same hashed output.  The good part is that if you use a unique password, it's unlikely to be found in a list of leaked passwords. These lists are frequently used with password crackers like HashCat or John the Ripper.  For this exercise, we'll use the latter, but both have their pros and cons.  We'll use a password list called rockyou.txt.  This password list was created from a data breach of the company [RockYou](https://en.wikipedia.org/wiki/RockYou).  It contains over 14 million unique passwords pulled from that breach.
 
 I copied the root line from /etc/shadow into a file called root_pw.txt
 

@@ -4,7 +4,7 @@
 
 ### In RSA, a small e value can be problematic, but what about N? Can you decrypt this? values
 
-You can download the file which contains:
+You can download the file, which contains:
 
 ```sh
 $ cat values 
@@ -14,11 +14,11 @@ n: 12806784158222140578645247984532978191819106215739454775447581710559682451164
 e: 65537
 ```
 
-First because 'n' is small we can use [factordb.com](https://factordb.com) to figure out p and q.
+First, because 'n' is small, we can use [factordb.com](https://factordb.com) to figure out p and q.
 
 ![factordb](./factordb.png)
 
-from this we can say:
+From this, we can say:
 p = 1899107986527483535344517113948531328331
 q = 674357869540600933870145899564746495319033
 

@@ -33,7 +33,7 @@ wpjvJAM{jhlzhy_k3jy9wa3k_h47j6k69}
 ```
 Okay!  This looks familiar.  Off to CyberChef...
 
-[Flag](./flag.png)
+![Flag](./flag.png)
 
 **picoCTF{caesar_d3cr9pt3d_a47c6d69}**
 

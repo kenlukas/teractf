@@ -27,25 +27,25 @@ Before going to far down the rabbit hole, I checked the source code and found:
 -->
 ```
 
-Okay, the web page is using the Python eval function.  This is dangerous.  It's blocking a lot of things but not all.
+Okay, the web page is using the Python eval function.  This is dangerous.  It's blocking a lot of things, but not all.
 
-Since eval will execute a string as a Python expression, we can use `open` and `read` but the regex will catch hex, unicode, url-encoded characters, any file extension between 1 and 3 characters (.xxx), any forward or backslash, and two periods in a row `..`.
+Since eval will execute a string as a Python expression, we can use `open` and `read`, but the regex will catch hex, unicode, url-encoded characters, any file extension between 1 and 3 characters (.xxx), any forward or backslash, and two periods in a row `..`.
 
-But what it doesn't exclude is printable characters (other than the periods) including parenthesis.
+But what it doesn't exclude is printable characters (other than the periods), including parentheses.
 
-First I checked if I could use the `chr` command to convert a decimal value to a character.
+First, I checked if I could use the `chr` command to convert a decimal value to a character.
 
 ![testing2](./testing2.png)
 
-and it worked!
+And it worked!
 
 ![result2](./result2.png)
 
-Then I tested if I could using a forward slash since it was being blocked.
+Then I tested if I could use a forward slash since it was being blocked.
 
 ![testing3](./testing3.png)
 
-and that worked too!
+And that worked too!
 
 ![result3](./result3.png)
 
@@ -53,7 +53,7 @@ Now to combine it with an `open` and `read` command.
 
 ![python_flag](./python_flag.png)
 
-and viola!
+And viola!
 
 ![flag](./flag.png)
 

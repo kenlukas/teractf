@@ -2,7 +2,7 @@
 
 ## Web
 
-### The flag is somewhere on this web application not necessarily on the website. Find it.
+### The flag is somewhere on this web application, not necessarily on the website. Find it.
 
 ![landing](./landing.png)
 
@@ -27,7 +27,7 @@ anMvbXlmaWxlLnR4dA==
 svssshjweuiwl;oiho.bsvdaslejg
 Disallow: /wp-admin/
 ```
-Two of those lines definitely look like base64 encoding. The first encoded line looked promising but jumbled.  Trying the second line:
+Two of those lines appear to be base64 encoded. The first encoded line looked promising but jumbled.  Trying the second line:
 
 ![chef](./chef.png)
 

@@ -15,7 +15,7 @@ I tried something simple by evaluating "4*4"
 
 ![testing1](./testing1.png)
 
-Before going to far down the rabbit hole, I checked the source code and found:
+Before going too far down the rabbit hole, I checked the source code and found:
 
 ```html
 <!--

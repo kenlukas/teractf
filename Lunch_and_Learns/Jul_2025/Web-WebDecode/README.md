@@ -13,11 +13,11 @@ I normally click on all the links to see what else is available.  Clicking on th
 
 ![about](./about.png)
 
-This definitely made me want to see the source.
+This made me want to see the source.
 
 ![about_source](./about_source.png)
 
-Line 44 looks like base64 encoding, off to CyberChef.
+Line 44 appears to be base64 encoding, so I'm off to CyberChef.
 
 ![flag](./flag.png)
 

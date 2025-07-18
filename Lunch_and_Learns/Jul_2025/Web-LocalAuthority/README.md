@@ -8,7 +8,7 @@ The landing page has login/password fields.
 
 ![landing](./landing.png)
 
-The source code shows it hits login.php but nothing more to go on.
+The source code indicates that it hits login.php, but there is no further information to go on.
 
 ```html
 <!DOCTYPE html>
@@ -40,7 +40,7 @@ Let's try admin:admin...
 
 ![login fail](./login_fail.png)
 
-Ok, it drops us in login.php...let me look at the source.
+Okay, it drops us in login.php... let me look at the source.
 
 ```html
 <!DOCTYPE html>
@@ -71,7 +71,7 @@ That script looks interesting...
 
 W00t! :joy: :joy:
 
-Go back to the landing page and use the credentials.
+Return to the landing page and use the provided credentials.
 
 ![flag](./flag.png)
 

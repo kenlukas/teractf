@@ -59,7 +59,7 @@ Interesting, I looked for the CSS file and didn't find it.  I then went up the p
 
 I get a 200 status when getting the image from the secret/assets directory, but a 403 status when looking in the assets directory:
 
-![assets](./secret_assets_403.png)
+![assets](./secret_assets_404.png)
 
 Moving back up the path, I tried the secret
 

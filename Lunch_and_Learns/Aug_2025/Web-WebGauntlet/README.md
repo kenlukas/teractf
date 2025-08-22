@@ -8,21 +8,21 @@ The challenge comes with two links.  The first is a logon page:
 
 ![landing](./landing.png)
 
-and a `filter.php` page which has what I assume is the blocked words:
+and a `filter.php` page, which has what I assume are the blocked words:
 
 ![filter1.png](./filter1.png)
 
-At first I tried `admin` for the Username and Password fields and received the following:
+At first, I tried `admin` for the Username and Password fields and received the following:
 
 ![admin_admin](./admin_admin.png)
 
-This looks easy enough, let's try to insert the word `admin`, a single quote, and a semicolon to comment out the rest of the line.
+This looks easy enough. Let's try to insert the word `admin`, a single quote, and a semicolon to comment out the rest of the line.
 
 That worked!  As you can see, the query created is exactly what was expected:
 
 ![round1](./round1.png)
 
-Off to Round 2! I refreshed the `filter.php` page and it updated to:
+Off to Round 2! I refreshed the `filter.php` page, and it updated to:
 
 ![filter2](./filter2.png)
 
@@ -46,7 +46,7 @@ Sweet, looking at the filter for Round 4 throws a wrench into using the same que
 
 Okay, since we can use the word `admin` to log in as admin, we need to break it up.
 
-For SQLite we can use the `||` operator to concatenate two (or more) strings.  So for this one I'll use `ad'||'min'; for the username:
+For SQLite, we can use the `||` operator to concatenate two (or more) strings.  So for this one, I'll use `ad'||'min'; for the username:
 
 ![round4](./round4.png)
 

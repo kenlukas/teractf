@@ -8,13 +8,13 @@ There are three hints:
 
 > A bookmarklet is a bookmark that runs JavaScript instead of loading a webpage.
 > What happens when you click a bookmarklet?
-> Web browsers have other ways to run JavaScript too.
+> Web browsers have other ways to run JavaScript, too.
 
-The landing page has a bookmarklet which is obviously javascript.
+The landing page has a bookmarklet, which is obviously JavaScript.
 
 ![landing](./landing.png)
 
-If you click in the box it copies it to the clipboard.
+Clicking in the box copies its contents to the clipboard.
 
 ![copy](./copy.png)
 
@@ -30,9 +30,9 @@ javascript:(function() {
         })();
 ```
 
-The encryptedFlag and key are right there.  The decryption loop subtracts a character in the key from a character in the encryptedFlag.  Then it adds 256 to the result and promptly removes it by taking modulo 256 of the result (basically subtracting it).
+The encryptedFlag and key are right there.  The decryption loop subtracts a character in the key from a character in the encryptedFlag.  Then it adds 256 to the result and promptly removes it by taking the modulo 256 of the result (basically subtracting it).
 
-I plugged it into the browser console and it gave an alert with the flag.
+I plugged it into the browser console, and it gave an alert with the flag.
 
 ![flag](./flag.png)
 

@@ -10,15 +10,15 @@ The landing page is pretty straightforward:
 
 ![landing](./landing.png)
 
-I tried the normal SQL injection of `admin' or 1=1;-- -` and any password and saw the SQL statement is searching for the password first.
+I tried the normal SQL injection of `admin' or 1=1;-- -` and any password, and saw that the SQL statement is searching for the password first.
 
 ![result1](./result1.png)
 
-The good news is that a SQL injection exists.  The slightly bad news is that even though this makes things slightly easier, it's a little less controlled.  If the password field is the only one `select`ed it will match all ids.  I'm not sure how this will effect things.  To leverage this SQL injection I'll use any username and `' or 1=1;-- -` in the password field. 
+The good news is that an SQL injection exists.  The slightly bad news is that even though this makes things slightly easier, it's a little less controlled.  If the password field is the only one `select`ed it will match all IDs.  I'm not sure how this will affect things.  To leverage this SQL injection, I'll use any username and `' or 1=1;-- -` in the password field. 
 
 ![result2](./result2.png)
 
-Wow!  It worked.  As we're presented with another input field, I want to see if this is open to a SQL injection so I just add a `'` and hit Search.
+Wow!  It worked.  As we're presented with another input field, I want to see if this is open to SQL injection, so I just add a `'` and hit Search.
 
 ![result3](./result3.png)
 
@@ -30,7 +30,7 @@ Since I have no clue what databases or tables there are, I'm going to need to do
 
 ![result4](./result4.png)
 
-Excellent!  From the results we can see that `more_table` has a column called `flag`.  I'll use another UNION to show the details
+Excellent!  From the results, we can see that `more_table` has a column called `flag`.  I'll use another UNION to show the details
 
 `' UNION SELECT flag, null, null from more_table;-- -`
 

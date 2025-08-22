@@ -1,4 +1,4 @@
-# July 2025 CTF Lunch and Learn
+# July 2025 Lunch and Learn
 
 ##  Web Exploitation
 

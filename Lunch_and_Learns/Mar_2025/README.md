@@ -1,6 +1,6 @@
-#README
+# March 2025 Lunch and Learn
 
-## March 2025 - Steganography
+## Steganography
 
 This month we used UNIX commands presented in the January L&L, like `file`, `cat`, `strings`, and `exiftool`, with some new tools.  
 

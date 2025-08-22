@@ -1,4 +1,4 @@
-# Lunch and Learn Solutions for January 2025
+# January 2025 Lunch and Learn
 
 ##  The Basics - Getting acquainted with Linux and picoCTF
 

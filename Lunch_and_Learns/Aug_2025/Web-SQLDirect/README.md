@@ -6,13 +6,13 @@
 
 This looks simple enough...although Postgresql has a quirky syntax IMO.
 
-First, log into the database using the instructions from the challenge.
+First, log in to the database using the instructions from the challenge.
 
-Then lets list (\l) the databases:
+Then let's list (\l) the databases:
 
 ![list](./list_databases.png)
 
-`pico` is the only "non-standard" database, the next step is to connect (\c) to the pico database.  From there we'll describe the tables (\dt).  From the image below there is only one table called 'flags'.  I'll print the whole table using a `select * from flags;` command
+`pico` is the only "non-standard" database; the next step is to connect (\c) to the pico database.  From there, we'll describe the tables (\dt).  From the image below, there is only one table called 'flags'.  I'll print the whole table using a `select * from flags;` command
 
 ![flag](./flag.png)
 

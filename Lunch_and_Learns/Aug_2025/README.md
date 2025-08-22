@@ -9,9 +9,8 @@
 - Web Gauntlet
 - Web Gauntlet 2
 - Web Gauntlet 3
-- Secrets
 - Bookmarklet
-- findme
+- Secrets (This one wasn't covered in the L & L because of time.  Try to solve it on your own first)
 
 #### SQL Notes
 

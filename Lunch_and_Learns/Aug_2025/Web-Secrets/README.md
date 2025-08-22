@@ -10,7 +10,7 @@ This is the landing page.
 
 ![landing](./landing.png)
 
-From the challenge description, we need to search for hidden directories.  Looking at the source I see a few different directories:
+From the challenge description, we need to search for hidden directories.  Looking at the source, I see a few different directories:
 
 ```html
 <!DOCTYPE html>
@@ -55,13 +55,13 @@ Trying `vendor` first:
 
 ![vendor](./vendor_404.png)
 
-Interesting, I looked for the CSS file and didn't find it.  I then went up the path and kept getting 404's.  Next, trying the `secret` path.
+Interesting, I looked for the CSS file and didn't find it.  I then went up the path and kept getting 404s.  Next, try the `secret` path.
 
-I get a 200 status when getting the image from the secret/assets directory but a 403 status when looking in the assets directory:
+I get a 200 status when getting the image from the secret/assets directory, but a 403 status when looking in the assets directory:
 
 ![assets](./secret_assets_403.png)
 
-Moving back up the path, I tried secret
+Moving back up the path, I tried the secret
 
 ![secret](./secret.png)
 
@@ -81,7 +81,7 @@ Alright!  There's yet another directory called `superhidden`.  Let's try that on
 
 ![superhidden](./superhidden.png)
 
-Ugh! :rage:  When will it end. Looking at the source :rage:
+Ugh! :rage:  When will it end? Looking at the source :rage:
 
 ![flag](./flag.png)
 

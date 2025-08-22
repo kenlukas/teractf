@@ -10,11 +10,11 @@ Same landing page as Web Gauntlet(WG).  Checking out the filters:
 
 > Filters: or and true false union like = > < ; -- /* */ admin
 
-Well, damn!  SQLite has two comments and they are both filtered (; and --), so for this challenge the Password field is also in play.
+Well, damn!  SQLite has two comments, and they are both filtered (; and --), so for this challenge, the Password field is also in play.
 
-From the WG challenge, we know we can use the `||` to make admin.  But for the Password field we need something that will return true.
+From the WG challenge, we know we can use the `||` to make "admin".  But for the Password field, we need something that will return true.
 
-Because `or`, `and`, `true` etc. are out of play I get negative thoughts.  And normally I would try to not dwell on them, but negatives are the answer!
+Because `or`, `and`, `true`, etc., are out of play, I get negative thoughts.  Normally, I try not to dwell on them, but negatives are the answer!
 
 We can use something like `a' is not 'z` because this will be true!  
 

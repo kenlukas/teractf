@@ -1,5 +1,5 @@
-# Teradata Infosec Capture the Flag I
+# Teradata Infosec Capture the Flag and Lunch & Learn Write-Ups
 
-###  Held 22 November 2024
+###  Next CTF October 2026
 
 This includes the challenges and writeups for the event.

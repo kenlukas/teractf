@@ -4,11 +4,11 @@
 
 ### The win is there!  All you need to do is grab it.
 
-> NOTE1:  The address for the win() function in the attached binary is off by 0x10 from the binary on the remote server.  If you add 0x10 to the win() function it will work.
+> NOTE1:  The address for the win() function in the attached binary is off by 0x10 from the binary on the remote server.  If you add 0x10 to the win() function, it will work.
 
 TL;DR - compiling the binary in the Docker container on a different OS changed the addresses from the locally built binary.
-The note above was added after the CTF started.  When I originally created the binary for the challenge I did it from the command line and wrote a solver 
-script for it, which worked.  But, and I don't remember why, there was trouble copying the binary to the docker container so I compiled the binary in the 
+The note above was added after the CTF started.  When I originally created the binary for the challenge, I did it from the command line and wrote a solver 
+script for it, which worked.  But, and I don't remember why, there was trouble copying the binary to the Docker container, so I compiled the binary in the 
 container.  Worked like a charm, except the address was now off by 0x10.  I haven't had a chance to figure out why.  The OS for the host it's running is 
 Amazon Linux 2 and the Docker container is Ubuntu, and the host I originally created it on is Kali Debian.  I'm not sure if it's because of Docker or the 
 different base OS's, but lesson learned.
@@ -50,20 +50,20 @@ int main() {
     return 0;
 }
 ```
-There is a win() function that will print the flag if called, and a whodis() function which asks for user input and prints the input back to the screen.  
-The issue is that the buffer variable is 32 bytes but the scanf will read as many characters as the user inputs.  Opening it up in gdb-pwndbg and looking 
-at the primary functions using `info functions` you see:
+There is a win() function that prints the flag if called, and a whodis() function that prompts the user for input and prints it back to the screen.  
+The issue is that the buffer variable is 32 bytes, but scanf reads as many characters as the user enters.  Opening it up in gdb-pwndbg and looking 
+at the primary functions using `info functions`, you see:
 
 ![info.png](./info.png)
 
-From this we can see that 0x080491c6 is the address of the win() function in this binary. (see NOTE1 if you got 0x080491b6)
+From this, we can see that 0x080491c6 is the address of the win() function in this binary. (see NOTE1 if you got 0x080491b6)
 
-Next, run the binary in the debugger and input a bunch of characters to overflow the buffer.  In this case I used the pwntools `cyclic` command to generate 
+Next, run the binary in the debugger and input a bunch of characters to overflow the buffer.  In this case, I used the pwntools `cyclic` command to generate 
 100 characters, and I pasted them into the prompt.
 
 ![overflow](./overflow.png)
 
-Since this is a 32-bit binary, we need to know what is in the EIP register when the buffer overflows.  In this case, it's "laaa" and if you put that in 
+Since this is a 32-bit binary, we need to know what is in the EIP register when the buffer overflows.  In this case, it's "laaa", and if you put that in 
 `cyclic` with the lookup switch, we find it starts at the 44th character.
 
 ![offset](./offset.png)
@@ -133,7 +133,7 @@ I don't know you, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAƑ\x04\x08. Cya!
 Wow! Have a flag: teractf{1_gue55_ur_init_2_w1n_1
 ```
 
-> NOTE2: Notice how the flag doesn't end with a "}"?  That's because the goofball who wrote the code (read: me), made the buffer for the flag too small. :rage: :rage: :rage: It's set at 32 bytes but the flag is 33 characters and needs to end in a null byte (\0), so it needs 34 characters.  So everyone that sent me the flag from above, I gave the "t}" to them.  Some figured it out on their on...Kudos to them! 
+> NOTE2: Notice how the flag doesn't end with a "}"?  That's because the goofball who wrote the code (read: me) made the buffer for the flag too small. :rage: :rage: :rage: It's set at 32 bytes, but the flag is 33 characters and needs to end in a null byte (\0), so it needs 34 characters.  So everyone who sent me the flag from above, I gave the "t}" to them.  Some figured it out on their own...Kudos to them! 
 
 
 **teractf{1_gue55_ur_init_2_w1n_1t}**

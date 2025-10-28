@@ -2,9 +2,9 @@
 
 ## Web
 
-### Guess the input, win a flag!  What more could you ask for.  I'm not even going to charge you for trying.  NOTE: Bruteforcing or attempting to bruteforce this challenge will lead to your banishment from the CTF, don't bruteforce it, there's a more elegant solution.
+### Guess the input, win a flag!  What more could you ask for?  I'm not even going to charge you for trying.  NOTE: Bruteforcing or attempting to bruteforce this challenge will lead to your banishment from the CTF, don't bruteforce it, there's a more elegant solution.
 
-The landing page is asking for any input without much guidance.
+The landing page asks for input without much guidance.
 
 ![landing](./landing)
 
@@ -20,7 +20,7 @@ That section starting with "//" is a comment...and it looks like a regular expre
 
 ![source_marked](./source_marked.png)
 
-So it's looking for something that starts with a 't', followed by any word character, zero or one question marks, four of any character, an 'f', and zero or 1 bangs (exclamation marks).  In other words it needed at a minimum seven characters starting with a 't' and ending with an 'f' (or eight characters ending in 'f!').  Hey look!  `teractf` works perfectly.
+So it's looking for something that starts with a 't', followed by any word character, zero or one question marks, four of any character, an 'f', and zero or 1 bangs (exclamation marks).  In other words, it needed at a minimum seven characters starting with a 't' and ending with an 'f' (or eight characters ending in 'f!').  Hey, look!  `teractf` works perfectly.
 
 ![flag1](./flag1.png)
 

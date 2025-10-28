@@ -82,13 +82,14 @@ if __name__ == "__main__":
 ```
 
 Authors Note:  I wanted this to be a lot harder but in this case, math made it easier.
+```sh
 XNOR=¬(XOR)
 From A XNOR B=C, you get B=A⊕¬C
 But XOR and XNOR are both self-inverse, so:
   A XNOR B=C
   A⊕C=B′ (the bitwise complement of the true key)
   Complementing again gives the true key
-
+```
 In this case, you know A (the static string characters) and you know ¬C because that's the encrypted value.  XOR'ing them give B which is the key.
 
 Here's the code I used to solve it:

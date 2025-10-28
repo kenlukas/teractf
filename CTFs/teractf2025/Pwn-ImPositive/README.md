@@ -70,12 +70,12 @@ int main(){
 }
 ```
 
-From reading the source code, the code will only accept positive integers as input.  It then adds the up, and if they are a positive value it will show the result, BUT if the result is negative it will give the flag!  This is an integer overflow vulnerability.
+From reading the source code, the code will only accept positive integers as input.  It then adds up, and if the result is positive, it shows the result, BUT if it's negative, it gives the flag!  This is an integer overflow vulnerability.
 
-The integers in this code are signed integers. What that means is it can be a positive or negative (or zero) value.  How it does this can be a bit (pun intended) strange at first.  If you already know this, skip ahead to the solution.  An integer is usually 32-bits in C.  That means there are 32 1's or 0's that represent a number in binary.  For a signed integer the right most 31 bits are positive values until the 32 bit (furthest left) is a 1, then all the values are negative.  The top answer [here](https://stackoverflow.com/questions/5739888/what-is-the-difference-between-signed-and-unsigned-int) gives a good visual representation of what I'm talking about using a 4-bit number as an example. Long story longer... If you assign a value to an signed integer larger than the maximum positive value (2147483647) it will be interpreted as a negative number by the program.
+The integers in this code are signed integers. What that means is it can be a positive or negative (or zero) value.  How it does this can be a bit (pun intended) strange at first.  If you already know this, skip ahead to the solution.  An integer is usually 32 bits in C.  That means there are 32 1's or 0's that represent a number in binary.  For a signed integer, the right-most 31 bits are positive until the 32nd bit (furthest left) is 1; then all values are negative.  The top answer [here](https://stackoverflow.com/questions/5739888/what-is-the-difference-between-signed-and-unsigned-int) gives a good visual representation of what I'm talking about using a 4-bit number as an example. Long story longer... If you assign a value to a signed integer larger than the maximum positive value (2147483647), it will be interpreted as a negative number by the program.
 
 **Solution:**
-Since it checks each integer after input, you need to use a value for one that is the maximum (or almost the maximum) and a second number that when added to it will overflow the signed integer making it negative.  The program then interprets the addend as a negative number and gives the flag.
+Since it checks each integer after input, you need to use a value for one that is the maximum (or almost the maximum), and a second number that, when added to it, will overflow the signed integer, making it negative.  The program then interprets the addend as a negative number and gives the flag.
 
 
 ```sh

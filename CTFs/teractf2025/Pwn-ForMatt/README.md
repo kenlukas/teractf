@@ -4,7 +4,7 @@
 
 ### I went to print something but there's a For Matt problem?  Maybe you can figure out where the flag is.
 
-This is clearly a format string exploit without even looking at the code.
+This is clearly a format string exploit, even without looking at the code.
 
 ```C
 #include <stdio.h>
@@ -46,7 +46,7 @@ int main(int argc, char **argv){
 
 The `printf(buf)` is the error.  It allows user input to be printed without a format specifier.
 
-There are different types of format string exploits.  For this one, the flag is being put on the stack, so theoretically we can print down the stack until we get the flag.  This is the script I used.  It rolls down the stack, printing out a string and its position on the stack.
+There are different types of format string exploits.  For this one, the flag is on the stack, so theoretically, we can print the stack down until we get the flag.  This is the script I used.  It rolls down the stack, printing a string and its position.
 
 ```python
 from pwn import *

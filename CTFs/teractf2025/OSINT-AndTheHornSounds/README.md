@@ -8,23 +8,23 @@ This challenge came with an image:
 
 ![buckhorn](./buckhorn.jpg)
 
-Now if you do a reverse image search in Google Images and cut that good looking guy out of the picture 
+Now, if you do a reverse image search in Google Images and cut that good-looking guy out of the picture 
 
 ![search](./search.png)
 
-the first to references are for Harris Lake / Buckhorn Disc Golf Course.
+The first two references are for Harris Lake / Buckhorn Disc Golf Course.
 
 ![matches](./matches.png)
 
-Looking back at the picture and still ignoring that good looking guy, that Nuclear Power Plant cooling tower in the background could be important.  They have warning systems, and sirens (horn).
+Looking back at the picture and still ignoring that good-looking guy, that Nuclear Power Plant cooling tower in the background could be important.  They have warning systems and sirens (horns).
 
-If you Google "Harris Lake Nuclear Power Plant" the third reference is about Emergency Planning Information.
+If you Google "Harris Lake Nuclear Power Plant," the third reference is about Emergency Planning Information.
 
 ![harris npp](./harris_lake_npp.png)
 
 The third entry down looks promising.
 
-If you scroll down a little and look on the right side of the page it says there was a test on October 8, 2025 and it was three minutes long.
+If you scroll down a little and look on the right side of the page, you'll see that there was a test on October 8, 2025, and it was 3 minutes long.
 
 ![flag](./flag.png)
 

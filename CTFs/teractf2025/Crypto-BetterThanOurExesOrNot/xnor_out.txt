@@ -1,0 +1,7 @@
+Key: [REDACTED]
+
+Message: b'When is it safe to use the same key??'
+Encrypted message: df06bc4814d511416ea69b4a7a7238f3dd9de891a5254bdb84499dc22ead6d9fcb94da9ed8
+
+Flag: [REDACTED]
+Encrypted flag: fc0bab4757c8041a70e1e458692702e3d982f897bf34589ab31cdbee7fb57ae0938990949a

@@ -25,7 +25,8 @@ Archive:  zebra_info_propaganda.docx
   inflating: customXml/_rels/item1.xml.rels
 ```
 
-Then it's a matter of finding the right file.  Since the flag is going to start with "teractf" I ran a recursive `grep` on the directory and found the flag in word/document.xml.  Here's a snippet:
+Then it's a matter of finding the right file.  Since the flag starts with "teractf", I ran a recursive `grep` on the directory and found it in word/document.xml.  
+Here's a snippet:
 
 ![xml](./xml.png)
 

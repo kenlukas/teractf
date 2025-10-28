@@ -39,8 +39,8 @@ int main() {
 }
 ```
 
-Reviewing the source code, the first thing that pops out is that it uses `gets` to collect user input.  This is extremely dangerous, if you don't believe me read the `gets` man page.  The buffer has space allocated for 30 characters.  If the user adds more than that, it will start overwriting the stack.  
-The next thing that catches my attention is that it sets a variable to 1337 and after the user input it checks if that is still the case.  If it is, no flag.  If it's not you get the flag.  This is a relatively easy buffer overflow.  We need to add enough characters (32) in the input to overflow the buffer and overwrite the `blah` variable.
+Reviewing the source code, the first thing that pops out is that it uses `gets` to collect user input.  This is extremely dangerous; if you don't believe me, read the `gets` man page.  The buffer has space allocated for 30 characters.  If the user adds more than that, it will start overwriting the stack.  
+The next thing that catches my attention is that it sets a variable to 1337 and, after the user input, checks whether that is still the case.  If it is, no flag.  If it's not, you get the flag.  This is a relatively easy buffer overflow.  We need to add enough characters (32) in the input to overflow the buffer and overwrite the `blah` variable.
 
 
 ```sh

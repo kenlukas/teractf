@@ -12,7 +12,7 @@ I decompiled the file using Ghidra.  Looking at the `main` function:
 
 ![main](./main.png)
 
-It looks like it reads the flag into a variable then calls two other functions before printing the encoded flag.
+It looks like it reads the flag into a variable, then calls two other functions before printing the encoded flag.
 
 The first one is my_ex(), which XORs each byte with the value 0x31:
 

@@ -4,7 +4,7 @@
 
 ### A mini treasure hunt!
 
-The landing page and the clue in the challenge allude to treasure and maps.
+The landing page and the challenge clue allude to treasure and maps.
 
 ![landing](./landing.png)
 
@@ -12,7 +12,7 @@ The first place I usually look for this type of challenge is robots.txt
 
 ![robots](./robots.png)
 
-And because of all the clues, the next thing I looked at is sitemap.xml
+And because of all the clues, the next thing I looked at was sitemap.xml
 
 ![flag](./flag.png)
 

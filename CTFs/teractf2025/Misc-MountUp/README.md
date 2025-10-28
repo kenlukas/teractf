@@ -6,7 +6,7 @@
 
 If you view the Dockerfile attached to the challenge, you'll see the flag is getting mounted to the root (/) directory with a random extension.
 
-Then reading the app.py file, you can see there's a view directory that expects a filename as a parameter:
+Then, reading the app.py file, you can see there's a view directory that expects a filename as a parameter:
 
 ```python
 @app.route('/view')
@@ -35,11 +35,11 @@ Okay, let's try it with the filename parameter, looking for the app.py file in t
 
 ![app](./app.png)
 
-Now, let's see if a path traveral will work:
+Now, let's see if a path traversal will work:
 
 ![hosts](./hosts.png)
 
-Sweet!  But now what?  We need a file that will show the files/volumes mounted for this container.  Luckily, there's a /proc/self/mounts file that shows them:
+Sweet!  But now what?  We need a file listing the files/volumes mounted for this container.  Luckily, there's a /proc/self/mounts file that shows them:
 
 ![mounts](./mounts.png)
 

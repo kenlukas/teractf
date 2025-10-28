@@ -29,11 +29,11 @@ output = encode_str(flag, key)
 print(f'encoded flag (hex): {hexlify(output)}')
 ```
 
-Okay, we're given the encoded flag and the program that was used to create it.  The key is a combination of four random letters (upper and lowercase), or numbers.  The flag is encoded by xor'ing the flag with a character from the key and then 9 is added to it.
+Okay, we're given the encoded flag and the program that was used to create it.  The key is a combination of four random letters (upper and lowercase) or numbers.  The flag is encoded by XORing it with a character from the key, then adding 9.
 
-Since the flag is only four characters, and we know the flag starts with `teractf{` we can reverse the encoded flag to get the key and test it against the 5-8 bytes in the encoded flag.
+Since the flag is only 4 characters and we know it starts with `teractf{`, we can reverse the encoded flag to get the key and test it against the 5-8 bytes in the encoded flag.
 
-For example we know the first character of the flag is a `t`, we can subtract 9 from the first byte in the encoded flag and xor it with `t` to get the first value of the flag (110 which is the letter `n`).  We can then text it on the fifth byte in the flag (0x16) to see if we get the expected value (c). This works:
+For example, we know the first character of the flag is a `t`. We can subtract 9 from the first byte of the encoded flag and xor it with `t` to get the first value of the flag (110, which is the letter `n`).  We can then text it on the fifth byte in the flag (0x16) to see if we get the expected value (c). This works:
 
 ```python
 >>> (0x23-9) ^ ord('t')
@@ -47,7 +47,7 @@ For example we know the first character of the flag is a `t`, we can subtract 9 
 >>> chr(116)
 't'
 ```
-We could do this for all manually but it's easier to write a script.
+We could do this all manually, but it's easier to write a script.
 
 
 **teractf{Wh3n_1n_d0ubt_r3ad_Th3_s0urc3_c0d3}**

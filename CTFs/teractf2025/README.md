@@ -9,6 +9,7 @@
 - Mykhailo Klunko (What a surge at the end)
 - Joshua Tucker (he had the lead for a little bit late in the day before a prior commitment nuked his chance to win)
 
-NOTE: Prior commitments on CTF day shouldn't happen, this will not be tolerated in the future 😉
+NOTE: Prior commitments on CTF day shouldn't happen; this will not be tolerated in the future 😉
+NOTE: Thanks again to Eric and Kurt for allowing me the time to present the CTF and the Lunch and Learns!
 
 
